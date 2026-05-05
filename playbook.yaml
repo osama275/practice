@@ -1,0 +1,11 @@
+---
+- name: test playbook
+  hosts: production
+  become: yes
+  tasks:
+    - name: print welcome message
+      debug:
+        msg: "I Said Welcome"
+
+...
+
